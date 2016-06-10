@@ -16,7 +16,6 @@ function makeNote() {
     document.getElementsByClassName('container')[0].appendChild(box);
     document.getElementsByClassName('box')[count].appendChild(text);
 
-    console.log(count);
     return;
 };
 
