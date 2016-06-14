@@ -12,6 +12,13 @@
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
+      margin: 60px 10px 0;
+    }
+    .flex-center {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
     }
     h1 {
       font-family: sans-serif;
@@ -34,9 +41,9 @@
       font-size: 1rem;
     }
     input {
+      height:45px;
       padding-left: 10px;
       border: 1px solid #eee;
-      border-radius: 2px;
       background: #f7f7f7;
     }
     input:active {
@@ -52,17 +59,20 @@
       color: #222;
       background-color: #ccc038;
     }
+    .row {
+
+    }
   </style>
 
 </head>
 <body>
 
 <h1>My Notes</h1>
-
-    <input id="text" type="text" placeholder="Message">
-    <input id="colour" type="text" placeholder="Colour">
-    <button type="button" id="make-sticky">Make a sticky!</button>
-
+<div class="flex-center">
+  <input id="text" type="text" placeholder="Message">
+  <input id="colour" type="text" placeholder="Colour">
+  <button type="button" id="make-sticky">Make a sticky!</button>
+</div>
 
   <div class="container"></div>
   <!-- js -->
